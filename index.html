@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <title>Index</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .gicon {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .feature-icon {
+      display: inline-flex;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .product-header {
+      background-color: #cfe2ff;
+      border: 1px solid #9ec5fe;
+      border-radius: 6px;
+      padding: 18px;
+      margin-bottom: 25px;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    /* ช่องสำหรับ Product ที่ยังไม่มีรูป */
+    .image-placeholder {
+      width: 100%;
+      height: 320px;
+      background-color: #e9ecef;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #6c757d;
+      font-size: 18px;
+    }
+
+    .product-body {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+
+    /* Cart */
+    .cart-box {
+      position: relative;
+      color: white;
+      font-size: 26px;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -12px;
+
+      background-color: red;
+      color: white;
+
+      font-size: 11px;
+
+      width: 20px;
+      height: 20px;
+
+      border-radius: 50%;
+
+      text-align: center;
+      line-height: 20px;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <div id="menu-container"></div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner.png" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="img/c6.png" class="d-block w-100" alt="..." />
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="img/logo1.png" alt="Logo" width="180" />
+
+    <!-- หัวข้อ -->
+    <h1 class="display-5 fw-bold">Welcome to Cat Lovers</h1>
+    <div class="col-lg-6 mx-auto">
+      <!-- รายละเอียด -->
+      <p class="lead mb-4">
+        "Go2upSkills Thailand's no.1 online course platform. We provide a platform for experts of any profession to
+        create
+        courses that can be offered to the public. With Go2upSkills, anybody in can teach and learn online anytime,
+        anywhere."
+      </p>
+
+      <!-- ปุ่ม -->
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="course.html" class="btn btn-primary btn-lg px-4">
+          Courses
+        </a>
+
+        <a href="register.html" class="btn btn-outline-primary btn-lg px-4">
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-5 my-5 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+    <img class="img-fluid" src="img/c7.png" width="500" />
+    <img class="img-fluid" src="img/c8.png" width="500" />
+  </div>
+
+  <!-- Courses -->
+  <div class="container mt-4 mb-5">
+    <section>
+  </div>
+  <!-- Header -->
+  <div>
+    <div class="container">
+      <h3 class="text-center mb-0">
+        Our Courses
+      </h3> <br>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="container">
+    <div class="row g-4">
+
+
+      <!-- Product 1 -->
+      <div class="col-md-4">
+
+        <div class="product-card">
+
+          <img src="img/c1.png" class="product-img" alt="Course 1">
+
+          <div class="product-body">
+            <div class="product-title">
+              Course 1
+            </div>
+            <div class="product-description">
+              Learn the basics of web development.
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Product 2 -->
+      <div class="col-md-4">
+
+        <div class="product-card">
+
+          <img src="img/c2.png" class="product-img" alt="Course 2">
+
+          <div class="product-body">
+            <div class="product-title">
+              Course 2
+            </div>
+            <div class="product-description">
+              Advance your knowledge in Python programming.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+
+        <div class="product-card">
+
+          <img src="img/c3.png" class="product-img" alt="Course 3">
+
+          <div class="product-body">
+            <div class="product-title">
+              Course 3
+            </div>
+            <div class="product-description">
+              Master data analysis with Power BI.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Product 4 -->
+      <div class="col-md-4">
+
+        <div class="product-card">
+
+          <img src="img/c4.png" class="product-img" alt="Course 4">
+
+          <div class="product-body">
+            <div class="product-title">
+              Course 4
+            </div>
+            <div class="product-description">
+              Learn the basics of web development.
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Product 5 -->
+      <div class="col-md-4">
+
+        <div class="product-card">
+
+          <img src="img/c5.png" class="product-img" alt="Course 5">
+
+          <div class="product-body">
+            <div class="product-title">
+              Course 5
+            </div>
+            <div class="product-description">
+              Advance your knowledge in Python programming.
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Product 6 -->
+      <div class="col-md-4">
+
+        <div class="product-card">
+
+          <img src="img/c6.png" class="product-img" alt="Course 6">
+
+          <div class="product-body">
+            <div class="product-title">
+              Course 6
+            </div>
+            <div class="product-description">
+              Master data analysis with Power BI.
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div id="course"></div>
+      <div class="container">
+        <div class="text-center">
+          <a class="btn btn-primary btn-xl text-uppercase" href="course.html">View All Courses</a>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/menu.js"></script>
